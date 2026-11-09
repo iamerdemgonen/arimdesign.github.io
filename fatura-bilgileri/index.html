@@ -1,0 +1,74 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fatura Bilgileri – ARİM DESIGN OTOMOTİV</title><meta name="description" content="ARİM DESIGN OTOMOTİV LİMİTED ŞİRKETİ fatura bilgileri, tek dokunuşla kopyalama"><meta name="theme-color" content="#10243A"><style>
+:root{--navy:#1B2C3E;--label:#5B6B7A;--rule:#DCE5E8;--teal:#176B87;--edge:#D7E4E6;--bg:#EDF2F3}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--navy);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;line-height:1.4}
+.card{width:100%;max-width:620px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 1px 2px rgba(16,36,58,.06),0 12px 32px rgba(16,36,58,.10)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:22px 28px;background:linear-gradient(90deg,#10243A,#1B4056);color:#fff}
+.hdr h1{white-space:nowrap;font-size:21px;font-weight:700;letter-spacing:.1px}
+.pill{flex:none;font-size:11px;font-weight:700;letter-spacing:.07em;padding:7px 14px;border-radius:99px;background:#244A5B;border:1px solid #527789;color:#F0F7F8}
+.body{display:grid;grid-template-columns:1fr 188px;gap:28px;padding:26px 28px 28px}
+.rows{min-width:0}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;border-top:1px solid var(--rule)}
+.row:first-child{border-top:0;padding-top:0}
+.row:last-child{padding-bottom:0}
+.lbl{font-size:10px;font-weight:700;letter-spacing:.09em;color:var(--label);text-transform:uppercase;margin-bottom:4px}
+.val{font-size:14px;font-weight:700;overflow-wrap:anywhere}
+.val.addr{font-weight:500;font-size:13.5px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;padding:0;border:0}
+.pair .row{border-top:1px solid var(--rule);padding:14px 0}
+.copy{flex:none;position:relative;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--edge);border-radius:10px;background:#fff;color:var(--teal);cursor:pointer;transition:background .15s,border-color .15s,transform .1s}
+.copy:hover{background:#F1F8F8;border-color:#BBD3D6}
+.copy:active{transform:scale(.94)}
+.copy:focus-visible,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.copy svg{width:16px;height:16px;grid-area:1/1}
+.copy .ok{display:none}
+.copy.done{background:#E8F5EE;border-color:#A9D8BE;color:#1E7B4B}
+.copy.done .cp{display:none}.copy.done .ok{display:block}
+.side{display:flex;flex-direction:column;align-items:center;gap:10px}
+.side .lbl{color:var(--teal);margin:0;text-align:center}
+.qr{width:100%;aspect-ratio:1;padding:12px;border:1px solid var(--edge);border-radius:14px;background:linear-gradient(135deg,#F3F9F8,#fff)}
+.qr a,.qr svg{display:block;width:100%;height:100%}
+.btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-weight:700;font-size:12px;line-height:1;color:var(--teal);text-decoration:none;padding:10px 14px;border-radius:99px;border:1px solid #BBD3D6;background:#F1F8F8;white-space:nowrap}
+.btn:hover{background:#E6F2F3}
+.btn svg{width:10px;height:10px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);background:#10243A;color:#fff;font-size:13px;font-weight:600;padding:10px 16px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:640px){
+ .hdr{padding:18px 20px}.hdr h1{font-size:15px}.pill{font-size:10px;padding:6px 10px}.body{grid-template-columns:1fr;padding:22px 20px 24px;gap:20px}
+ .side{order:2}.side .lbl,.qr{display:none}.btn{width:100%;justify-content:center;padding:13px 14px;font-size:13px}
+ .pair{grid-template-columns:1fr}
+}
+@media(prefers-color-scheme:dark){:root{--bg:#0E1A26}}
+@media print{body{background:#fff}.card{box-shadow:none}.copy,.toast{display:none}}
+</style></head><body>
+<main class="card" style="max-width:520px">
+<header class="hdr"><h1>Fatura Bilgileri</h1><span class="pill">KOPYALANABİLİR</span></header>
+<div class="body" style="grid-template-columns:1fr">
+<div class="rows">
+<div class="row"><div><div class="lbl">Ticari Unvan</div><div class="val ">ARİM DESIGN OTOMOTİV LİMİTED ŞİRKETİ</div></div><button class="copy" type="button" data-copy="ARİM DESIGN OTOMOTİV LİMİTED ŞİRKETİ" aria-label="Ticari unvanı kopyala"><svg class="cp" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.8"/><path d="M10.5 3.2V3.5a1.8 1.8 0 0 0-1.8-1.8H3.5A1.8 1.8 0 0 0 1.7 3.5v5.2a1.8 1.8 0 0 0 1.8 1.8h.3" stroke-linecap="round"/></svg><svg class="ok" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></button></div>
+<div class="row"><div><div class="lbl">Vergi Numarası (VKN)</div><div class="val ">0790915643</div></div><button class="copy" type="button" data-copy="0790915643" aria-label="Vergi numarasını kopyala"><svg class="cp" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.8"/><path d="M10.5 3.2V3.5a1.8 1.8 0 0 0-1.8-1.8H3.5A1.8 1.8 0 0 0 1.7 3.5v5.2a1.8 1.8 0 0 0 1.8 1.8h.3" stroke-linecap="round"/></svg><svg class="ok" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></button></div>
+<div class="row"><div><div class="lbl">Vergi Dairesi</div><div class="val ">Büyükçekmece</div></div><button class="copy" type="button" data-copy="Büyükçekmece" aria-label="Vergi dairesini kopyala"><svg class="cp" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.8"/><path d="M10.5 3.2V3.5a1.8 1.8 0 0 0-1.8-1.8H3.5A1.8 1.8 0 0 0 1.7 3.5v5.2a1.8 1.8 0 0 0 1.8 1.8h.3" stroke-linecap="round"/></svg><svg class="ok" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></button></div>
+<div class="row"><div><div class="lbl">İş Yeri Adresi</div><div class="val addr">Adnan Kahveci Mah. Osmanlı Cad. İnşaat No: 44, İç Kapı No: 10, Beylikdüzü / İstanbul</div></div><button class="copy" type="button" data-copy="Adnan Kahveci Mah. Osmanlı Cad. İnşaat No: 44, İç Kapı No: 10, Beylikdüzü / İstanbul" aria-label="Adresi kopyala"><svg class="cp" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.8"/><path d="M10.5 3.2V3.5a1.8 1.8 0 0 0-1.8-1.8H3.5A1.8 1.8 0 0 0 1.7 3.5v5.2a1.8 1.8 0 0 0 1.8 1.8h.3" stroke-linecap="round"/></svg><svg class="ok" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></button></div>
+</div>
+<button class="btn" type="button" style="width:100%;justify-content:center;padding:13px;font-size:13px;cursor:pointer" data-copy="Ticari Unvan: ARİM DESIGN OTOMOTİV LİMİTED ŞİRKETİ
+Vergi Numarası (VKN): 0790915643
+Vergi Dairesi: Büyükçekmece
+İş Yeri Adresi: Adnan Kahveci Mah. Osmanlı Cad. İnşaat No: 44, İç Kapı No: 10, Beylikdüzü / İstanbul" data-msg="Tüm bilgiler kopyalandı">Tüm bilgileri kopyala</button>
+</div>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div><script>
+(function(){
+var toast=document.getElementById('toast'),t;
+function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(t);t=setTimeout(function(){toast.classList.remove('show')},1600)}
+function fallback(s){var a=document.createElement('textarea');a.value=s;a.setAttribute('readonly','');a.style.cssText='position:fixed;opacity:0;top:0';document.body.appendChild(a);a.select();a.setSelectionRange(0,s.length);var ok=false;try{ok=document.execCommand('copy')}catch(e){}document.body.removeChild(a);return ok}
+function copy(s){if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(s).then(function(){return true},function(){return fallback(s)})}return Promise.resolve(fallback(s))}
+document.addEventListener('click',function(e){
+ var b=e.target.closest('[data-copy]');if(!b)return;
+ copy(b.getAttribute('data-copy')).then(function(ok){
+  if(!ok){say('Kopyalanamadı, metni elle seçin');return}
+  say(b.getAttribute('data-msg')||'Kopyalandı');
+  if(b.classList.contains('copy')){b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1400)}
+ });
+});
+})();
+</script></body></html>
